@@ -21,3 +21,14 @@ print(firstName)    // Output: Jane
 var userName = "testUser"
 
 // --- Naming Conventions ---
+// camelCase: the standard naming convention in Swift (recommended)
+var latestDataFromServer = 50       // camelCase — preferred in Swift
+
+// snake_case: technically valid but not idiomatic Swift
+var latest_data_from_server = 40    // snake_case — avoid in Swift
+
+// --- Summary ---
+// - Use `var` to create mutable (changeable) variables.
+// - Swift automatically infers the type from the assigned value.
+// - Follow camelCase naming convention for all variable names.
+// - Variable names should be descriptive and self-documenting.
