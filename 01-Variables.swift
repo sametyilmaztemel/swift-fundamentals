@@ -9,3 +9,15 @@
 // --- Basic Variable Declaration ---
 // Swift uses type inference to automatically determine the data type.
 var firstName = "John"
+var lastName = "Doe"
+
+print(firstName)    // Output: John
+
+// --- Reassigning Variables ---
+// Variables declared with `var` can be reassigned at any time.
+firstName = "Jane"
+print(firstName)    // Output: Jane
+
+var userName = "testUser"
+
+// --- Naming Conventions ---
