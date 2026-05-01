@@ -30,3 +30,18 @@ isActive = false
 
 // --- Explicit Type Annotations ---
 // You can explicitly declare the type using a colon and type name.
+var largeNumber: Int32 = 50         // 32-bit integer
+let preciseDecimal: Float = 3.14    // 32-bit floating point
+let message: String                 // Declare without initial value
+message = "Welcome"                 // Assign later (must happen before use)
+
+// --- Type Conversion ---
+// Swift requires explicit type conversion — no implicit casting.
+let numericString = 400
+let convertedInt = Int(numericString)  // Convert to Int
+
+// --- Key Takeaways ---
+// - `let` = constant (immutable), `var` = variable (mutable)
+// - Common types: String, Int, Double, Float, Bool
+// - Swift infers types but you can annotate explicitly
+// - Type conversion is always explicit in Swift
