@@ -14,3 +14,19 @@ print(myNumber)
 let pi = 3.14     // Double (inferred)
 
 // --- Strings ---
+// Strings are text values enclosed in double quotes.
+var greeting = "Hello"
+print(greeting)
+
+greeting.uppercased()      // Convert to uppercase → "HELLO"
+greeting.count             // Get character count → 5
+greeting.append("1")       // Append a character → "Hello1"
+greeting.count             // Updated count → 6
+
+// --- Booleans ---
+// Booleans represent truth values: `true` or `false`.
+var isActive = true
+isActive = false
+
+// --- Explicit Type Annotations ---
+// You can explicitly declare the type using a colon and type name.
