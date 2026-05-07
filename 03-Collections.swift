@@ -52,3 +52,29 @@ uniqueCities.count            // 4 (unique values only)
 // Set operations
 let setA: Set = [40, 50, 60]
 let setB: Set = [50, 60, 70]
+let unionSet = setA.union(setB)       // Union: all unique elements
+unionSet.sorted()                      // [40, 50, 60, 70]
+
+// MARK: - Dictionaries
+
+// Key-value pairs for structured data access
+var fruitCalories: [String: Int] = [
+    "Pear": 100,
+    "Banana": 150,
+    "Apple": 200,
+    "Watermelon": 300
+]
+
+fruitCalories["Pear"]          // Access value by key → 100
+fruitCalories.keys             // All keys
+fruitCalories.values           // All values
+fruitCalories["Banana"] = 230  // Update a value
+
+// Dictionaries can have any Hashable key type
+var measurements: [Int: Double] = [20: 30.2, 30: 40.4]
+
+// --- Key Takeaways ---
+// - Arrays: ordered, indexed, allow duplicates
+// - Sets: unordered, unique values, support math operations
+// - Dictionaries: unordered key-value pairs, fast lookup by key
+// - All collections are generics and type-safe
