@@ -23,3 +23,27 @@ x += 1       // Shorthand addition assignment
 
 // MARK: - While Loop
 // Repeats a block of code while a condition is true.
+x = 0
+while x < 10 {
+    print(x)
+    x += 1
+}
+print("Loop completed.")
+
+// MARK: - For-In Loop with Arrays
+// Iterates over each element in a sequence.
+let names = ["Alice", "Bob", "Charlie", "Diana"]
+for name in names {
+    print(name.uppercased())
+}
+
+let scores = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+for score in scores {
+    print(score / 5 * 3)   // Compute and print a derived value
+}
+
+// MARK: - For-In Loop with Ranges
+// The closed range operator (...) includes both endpoints.
+for number in 1...10 {
+    print(number)
+}
