@@ -47,3 +47,29 @@ for score in scores {
 for number in 1...10 {
     print(number)
 }
+
+// The half-open range operator (..<) excludes the upper bound.
+for number in 1..<10 {
+    print(number)   // Prints 1 through 9
+}
+
+// MARK: - Control Flow (if / else if / else)
+// Conditional branching based on boolean expressions.
+let age = 42
+
+if age < 20 {
+    print("You are very young.")
+} else if age > 20 && age < 30 {
+    print("You are in your twenties.")
+} else if age > 30 && age < 40 {
+    print("You are in your thirties.")
+} else {
+    print("You are 40 or older.")
+}
+
+// --- Key Takeaways ---
+// - `while` loops check a condition before each iteration
+// - `for-in` loops iterate over sequences (arrays, ranges, strings)
+// - Use `...` for closed ranges and `..<` for half-open ranges
+// - `if` / `else if` / `else` handles conditional branching
+// - Combine conditions with `&&` (AND) and `||` (OR)
