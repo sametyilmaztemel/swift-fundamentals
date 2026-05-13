@@ -34,3 +34,39 @@ func multiply(a: Int, b: Int) -> Int {
 }
 let product = multiply(a: 6, b: 7)
 print("Product: \(product)")
+
+// A function returning a Bool
+func isGreater(x: Int, y: Int) -> Bool {
+    if x > y {
+        return true
+    } else {
+        return false
+    }
+}
+let comparison = isGreater(x: 3, y: 4)
+print("Is x greater than y? \(comparison)")
+
+// MARK: - Argument Labels & Parameter Names
+
+// Use external labels for clarity at call sites
+func greet(person name: String, from city: String) -> String {
+    return "Hello, \(name) from \(city)!"
+}
+let message = greet(person: "Alice", from: "London")
+print(message)
+
+// Omit the external label with `_ for cleaner call sites
+func power(_ base: Int, exponent: Int) -> Int {
+    return Int(pow(Double(base), Double(exponent)))
+}
+let result = power(2, exponent: 10)
+print("2^10 = \(result)")
+
+// MARK: - Default Parameter Values
+
+func configure(host: String = "localhost", port: Int = 8080) {
+    print("Connecting to \(host):\(port)")
+}
+configure()                      // Uses defaults
+configure(host: "example.com")   // Overrides host
+configure(port: 3000)            // Overrides port
