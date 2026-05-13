@@ -70,3 +70,38 @@ func configure(host: String = "localhost", port: Int = 8080) {
 configure()                      // Uses defaults
 configure(host: "example.com")   // Overrides host
 configure(port: 3000)            // Overrides port
+
+// MARK: - Optionals
+
+// Optionals represent variables that may hold a value or `nil`.
+var optionalName: String? = "Alice"
+optionalName = nil   // Now it holds nothing
+
+// Optional binding (safe unwrapping)
+if let name = optionalName {
+    print("Name is \(name)")
+} else {
+    print("Name is nil")
+}
+
+// Guard let for early exit
+func printLength(of text: String?) {
+    guard let unwrapped = text else {
+        print("No text provided.")
+        return
+    }
+    print("Text length: \(unwrapped.count)")
+}
+printLength(of: "Swift")
+printLength(of: nil)
+
+// Nil-coalescing operator (??) provides a default value
+let displayName = optionalName ?? "Anonymous"
+print("Display name: \(displayName)")
+
+// --- Key Takeaways ---
+// - Functions are declared with `func`, parameters, and optional return type
+// - Use `-> ReturnType` to specify what a function returns
+// - Argument labels improve readability at call sites
+// - Optionals (`Type?`) handle the absence of a value safely
+// - Use `if let`, `guard let`, or `??` for safe optional unwrapping
